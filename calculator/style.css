@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100wh;
+    place-items: center;
+    background-color: rgb(120, 104, 121);
+}
+
+.container {
+    height: 500px;
+    width: 490px;
+    border: 5px double red;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: aliceblue;
+}
+
+input {
+    height: 100px;
+    width: 98%;
+    font-size: 60px;
+    text-align: right;
+    border-radius: 10px;
+    background-color: rgb(149, 145, 160);
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.btn-container {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 35px;
+    gap: 20px;
+}
+
+.btn1 {
+    background-color: rgb(210, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn2 {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.btn1:hover,.btn2:hover{
+    background-color: rgb(161, 144, 122);
+}
+
+#equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
